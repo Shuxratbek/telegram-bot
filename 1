@@ -1,0 +1,13 @@
+import telebot
+
+bot = telebot.TeleBot("8402886576:AAE70_RRwRUpfJc0PJCN>
+
+
+@bot.message_handler(func=lambda message: True)
+
+def echo(message):
+
+    bot.reply_to(message, message.text)
+
+bot.infinity_polling(timeout=10, long_polling_timeout=5
+)
